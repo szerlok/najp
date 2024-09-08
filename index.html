@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wybierz najbliższy punkt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Wybierz punkt najbliższy zielonym punktom</h1>
+        <p id="instruction">Wybierz punkt najbliższy zielonym punktom.</p> <!-- Instrukcja -->
+        <div id="round-counter">1/10</div> <!-- Licznik rund -->
+        <div id="grid-container"></div>
+        <div id="buttons-container">
+            <button id="check-button">Sprawdź</button>
+            <button id="next-button" style="display:none;">Następne</button>
+        </div>
+        <p id="feedback"></p>
+        <div id="end-screen" style="display:none;"></div> <!-- Ekran końcowy -->
+        <table id="result-table"></table> <!-- Tabela wyników -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

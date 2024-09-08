@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+#game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 35px);  /* Zwiększamy kolumny do 12 */
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+#buttons-container {
+    display: flex;
+    gap: 20px;  /* Odstęp między przyciskami */
+}
+
+.grid-item {
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 8px;  /* Zaokrąglenie rogów */
+    transition: background-color 0.3s ease;
+}
+
+.grid-item.green {
+    background-color: green;
+}
+
+.grid-item.selected {
+    background-color: blue;
+}
+
+.grid-item.correct {
+    background-color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;  /* Zaokrąglone przyciski */
+    transition: transform 0.2s, background 0.4s
+#instruction {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#round-counter {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#end-screen h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#end-screen p {
+    font-size: 18px;
+}
+
